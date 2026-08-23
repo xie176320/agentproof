@@ -6,8 +6,8 @@ Run it locally:
 
 ```bash
 PYTHONPATH=src python scripts/run_benchmark.py \
-  --json-out benchmarks/results/v0.1.0.json \
-  --markdown-out benchmarks/results/v0.1.0.md
+  --json-out benchmarks/results/v0.1.1.json \
+  --markdown-out benchmarks/results/v0.1.1.md
 ```
 
 ## Metrics

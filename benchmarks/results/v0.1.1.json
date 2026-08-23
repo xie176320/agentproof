@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "name": "AgentProof synthetic conformance benchmark",
+    "version": "0.1.0",
+    "sha256": "a9572d1727df9a4760defe9807a860da8ddd0902b2817a33d6abd06784499e99",
+    "cases": 32,
+    "positive_cases": 16,
+    "negative_cases": 16,
+    "rules_covered": 16,
+    "rules_total": 16
+  },
+  "agentproof_version": "0.1.1",
+  "metrics": {
+    "tp": 16,
+    "fp": 0,
+    "fn": 0,
+    "tn": 496,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_rate": 0.0,
+    "decision_accuracy": 1.0,
+    "exact_case_accuracy": 1.0,
+    "exact_matches": 32
+  },
+  "per_rule": {
+    "AP001": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP002": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP003": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP004": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP005": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP006": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP007": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP008": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP009": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP010": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP011": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP012": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP013": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP014": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP015": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "AP016": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "support": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "cases": [
+    {
+      "id": "ap001-positive-literal-secret",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP001"
+      ],
+      "detected_rules": [
+        "AP001"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap002-positive-remote-pipe",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP002"
+      ],
+      "detected_rules": [
+        "AP002"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap003-positive-world-writable",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP003"
+      ],
+      "detected_rules": [
+        "AP003"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap004-positive-boundary-override",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP004"
+      ],
+      "detected_rules": [
+        "AP004"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap005-positive-shell-mcp",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP005"
+      ],
+      "detected_rules": [
+        "AP005"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap006-positive-wildcard-approval",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP006"
+      ],
+      "detected_rules": [
+        "AP006"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap007-positive-plaintext-transport",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP007"
+      ],
+      "detected_rules": [
+        "AP007"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap008-positive-unpinned-runner",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP008"
+      ],
+      "detected_rules": [
+        "AP008"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap009-positive-missing-frontmatter",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP009"
+      ],
+      "detected_rules": [
+        "AP009"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap010-positive-unrestricted-autonomy",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP010"
+      ],
+      "detected_rules": [
+        "AP010"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap011-positive-dynamic-execution",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP011"
+      ],
+      "detected_rules": [
+        "AP011"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap012-positive-missing-security-policy",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP012"
+      ],
+      "detected_rules": [
+        "AP012"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap013-positive-missing-ci",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP013"
+      ],
+      "detected_rules": [
+        "AP013"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap014-positive-missing-license",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP014"
+      ],
+      "detected_rules": [
+        "AP014"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap015-positive-missing-tests",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP015"
+      ],
+      "detected_rules": [
+        "AP015"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap016-positive-external-symlink",
+      "polarity": "positive",
+      "expected_rules": [
+        "AP016"
+      ],
+      "detected_rules": [
+        "AP016"
+      ],
+      "exact_match": true
+    },
+    {
+      "id": "ap001-negative-placeholder-secret",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap002-negative-download-then-verify",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap003-negative-scoped-cleanup",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap004-negative-policy-reminder",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap005-negative-direct-mcp-process",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap006-negative-explicit-approval",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap007-negative-localhost-transport",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap008-negative-pinned-runner",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap009-negative-complete-frontmatter",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap010-negative-bounded-authority",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap011-negative-typed-parser",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap012-negative-security-present",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap013-negative-ci-present",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap014-negative-license-present",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap015-negative-tests-present",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    },
+    {
+      "id": "ap016-negative-internal-symlink",
+      "polarity": "negative",
+      "expected_rules": [],
+      "detected_rules": [],
+      "exact_match": true
+    }
+  ],
+  "limitations": [
+    "Synthetic cases are authored from the public rule specifications and are not an independent validation set.",
+    "Metrics are rule-label classification metrics, not individual finding-instance metrics.",
+    "Real-world repositories may contain obfuscation, unsupported formats, context and runtime behavior outside this corpus."
+  ]
+}
