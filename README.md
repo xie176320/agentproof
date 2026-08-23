@@ -47,7 +47,7 @@ For an isolated command-line installation, use `pipx`:
 pipx install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
 ```
 
-Every [GitHub Release](https://github.com/xie176320/agentproof/releases) also includes a wheel, source archive and `SHA256SUMS`. To install the wheel without Git, download `agentproof_scanner-*.whl` from the release and run:
+[GitHub Releases](https://github.com/xie176320/agentproof/releases) produced by the current workflow include a wheel, source archive and `SHA256SUMS`. To install the wheel without Git, download `agentproof_scanner-*.whl` from the selected release and run:
 
 ```bash
 python -m pip install ./agentproof_scanner-0.1.0-py3-none-any.whl

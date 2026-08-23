@@ -8,7 +8,7 @@ AgentProof v0.1.0 provides a reproducible static security baseline for repositor
 python -m pip install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
 ```
 
-The GitHub Release also provides a wheel, source archive and `SHA256SUMS`; no PyPI account or package token is required.
+The tagged source can be installed directly above. Releases produced by the current workflow also provide a wheel, source archive and `SHA256SUMS`; no PyPI account or package token is required.
 
 ## Highlights
 
