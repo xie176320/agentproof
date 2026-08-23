@@ -90,7 +90,7 @@ class ScanResult:
     duration_ms: int
     findings: list[Finding] = field(default_factory=list)
     metadata: dict[str, Any] = field(default_factory=dict)
-    version: str = "0.1.0"
+    version: str = "0.1.1"
 
     @property
     def counts(self) -> dict[str, int]:
