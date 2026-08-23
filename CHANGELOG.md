@@ -4,6 +4,8 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-08-23
+
 ### Added
 
 - Add a 32-case, 16-rule synthetic conformance benchmark with precision, recall, F1 and exact-case accuracy reports.
@@ -27,5 +29,6 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 - Bounded GitHub archive retrieval with traversal and symbolic-link defenses.
 - Safe and deliberately vulnerable fixtures with 34 automated tests.
 
-[Unreleased]: https://github.com/xie176320/agentproof/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/xie176320/agentproof/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/xie176320/agentproof/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/xie176320/agentproof/releases/tag/v0.1.0
