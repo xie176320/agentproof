@@ -1,0 +1,30 @@
+name: Feature or rule proposal
+description: Propose a narrowly scoped capability or evidence-backed rule
+title: "proposal: "
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected ecosystem
+      description: Explain the Agent, MCP, or Skills risk with public references when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: unsafe
+    attributes:
+      label: Minimal unsafe example
+    validations:
+      required: true
+  - type: textarea
+    id: safe
+    attributes:
+      label: Closely related safe example
+    validations:
+      required: true
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Proposed remediation
+    validations:
+      required: true

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">AgentProof</title>
+  <desc id="desc">Evidence-backed security checks for AI Agent, MCP and Skills repositories</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.6" stop-color="#0b2638"/>
+      <stop offset="1" stop-color="#10463f"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cf3c8"/>
+      <stop offset="1" stop-color="#22b981"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <circle cx="1065" cy="135" r="220" fill="#24d99b" opacity=".09" filter="url(#glow)"/>
+  <circle cx="1175" cy="560" r="260" fill="#53b1fd" opacity=".08" filter="url(#glow)"/>
+  <g opacity=".22" stroke="#8fb2ce" stroke-width="1">
+    <path d="M0 98h1280M0 542h1280M92 0v640M1188 0v640"/>
+    <path d="M765 80h360M765 560h360"/>
+  </g>
+  <g transform="translate(88 110)">
+    <rect width="116" height="34" rx="17" fill="#17364a" stroke="#386076"/>
+    <circle cx="19" cy="17" r="6" fill="#32d583"/>
+    <text x="34" y="22" fill="#bdebdc" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">OPEN SOURCE</text>
+    <text x="0" y="154" fill="#f2f7fc" font-family="Inter,Arial,sans-serif" font-size="92" font-weight="800" letter-spacing="-5">AgentProof</text>
+    <text x="4" y="212" fill="#aec3d7" font-family="Inter,Arial,sans-serif" font-size="29">Evidence-backed security for</text>
+    <text x="4" y="255" fill="#7cf3c8" font-family="Inter,Arial,sans-serif" font-size="29" font-weight="700">AI Agent · MCP · Skills</text>
+    <g transform="translate(4 310)" font-family="Inter,Arial,sans-serif" font-size="17">
+      <rect width="168" height="45" rx="22" fill="#13283a" stroke="#31506a"/>
+      <text x="23" y="29" fill="#d6e4ef">STATIC ANALYSIS</text>
+      <rect x="182" width="155" height="45" rx="22" fill="#13283a" stroke="#31506a"/>
+      <text x="207" y="29" fill="#d6e4ef">NO EXECUTION</text>
+      <rect x="351" width="150" height="45" rx="22" fill="#13283a" stroke="#31506a"/>
+      <text x="380" y="29" fill="#d6e4ef">SARIF READY</text>
+    </g>
+  </g>
+  <g transform="translate(880 166)">
+    <path d="M128 0 248 44v103c0 109-72 190-120 213C80 337 8 256 8 147V44Z" fill="#0c1b2a" stroke="url(#shield)" stroke-width="9"/>
+    <path d="m66 174 42 42 85-98" fill="none" stroke="url(#shield)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(-54 325)" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="15">
+      <rect width="355" height="94" rx="14" fill="#0b1520" stroke="#2d475d"/>
+      <circle cx="22" cy="21" r="5" fill="#ff6b6b"/><circle cx="40" cy="21" r="5" fill="#fdb022"/><circle cx="58" cy="21" r="5" fill="#32d583"/>
+      <text x="22" y="54" fill="#7cf3c8">$ agentproof scan .</text>
+      <text x="22" y="77" fill="#bdd0df">score 94 · 0 high risk</text>
+    </g>
+  </g>
+</svg>

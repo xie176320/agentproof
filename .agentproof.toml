@@ -1,0 +1,9 @@
+[tool.agentproof]
+exclude = [
+  "examples/vulnerable-agent/**",
+  "tests/fixtures/vulnerable/**",
+  "docs/sample-report.*",
+  "reports/**",
+]
+disable_rules = []
+max_file_size = 1000000

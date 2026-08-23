@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "read-only-reviewer": {
+      "command": "npx",
+      "args": ["--yes", "reviewed-mcp-server@1.2.3"],
+      "env": {"API_KEY": "${REVIEWED_MCP_API_KEY}"}
+    }
+  },
+  "autoApprove": ["read_repository"]
+}

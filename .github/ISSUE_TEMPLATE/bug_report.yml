@@ -1,0 +1,41 @@
+name: Bug report
+description: Report incorrect behavior or a false positive/negative without sensitive data
+title: "bug: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Do not report vulnerabilities or include private repository content here. Follow SECURITY.md instead.
+  - type: input
+    id: version
+    attributes:
+      label: AgentProof version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Entry point
+      options: [CLI, GitHub Action, Web demo, Python API]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal public reproduction
+      description: Replace all credentials and private content with safe placeholders.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
