@@ -8,7 +8,7 @@
   <a href="https://github.com/xie176320/agentproof/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-32d583.svg"></a>
   <a href="https://www.python.org/"><img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-53b1fd.svg"></a>
   <a href="https://github.com/xie176320/agentproof/releases"><img alt="Release" src="https://img.shields.io/github/v/release/xie176320/agentproof?include_prereleases"></a>
-  <a href="https://pypi.org/project/agentproof-scanner/"><img alt="PyPI" src="https://img.shields.io/pypi/v/agentproof-scanner.svg"></a>
+  <a href="https://github.com/xie176320/agentproof/releases/latest"><img alt="GitHub downloads" src="https://img.shields.io/github/downloads/xie176320/agentproof/total.svg"></a>
 </p>
 
 AgentProof is a deterministic static scanner for repositories that contain **AI Agent instructions, MCP servers, or Agent Skills**. It finds risky permissions and supply-chain patterns, attaches line-level evidence, recommends a fix, and exports reports for people and CI systems.
@@ -28,7 +28,8 @@ AI-enabled repositories increasingly mix natural-language instructions with exec
 ## 60-second start
 
 ```bash
-python -m pip install agentproof-scanner
+# Install the tagged release directly from GitHub
+python -m pip install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
 
 # Scan the current repository
 agentproof scan .
@@ -40,7 +41,25 @@ agentproof scan https://github.com/owner/repository
 agentproof scan . --format sarif --output agentproof.sarif
 ```
 
-The PyPI distribution is named `agentproof-scanner`; the installed Python package and CLI remain `agentproof`.
+For an isolated command-line installation, use `pipx`:
+
+```bash
+pipx install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+```
+
+Every [GitHub Release](https://github.com/xie176320/agentproof/releases) also includes a wheel, source archive and `SHA256SUMS`. To install the wheel without Git, download `agentproof_scanner-*.whl` from the release and run:
+
+```bash
+python -m pip install ./agentproof_scanner-0.1.0-py3-none-any.whl
+```
+
+To replace an older installation with a selected GitHub tag:
+
+```bash
+python -m pip install --upgrade --force-reinstall "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+```
+
+AgentProof is distributed through GitHub Releases; no PyPI project, publishing account or package token is required. The built distribution is named `agentproof-scanner`, while the installed Python package and CLI remain `agentproof`.
 
 Example summary:
 

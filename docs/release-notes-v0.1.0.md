@@ -2,6 +2,14 @@
 
 AgentProof v0.1.0 provides a reproducible static security baseline for repositories containing AI Agent instructions, MCP configuration or Agent Skills.
 
+## Install from GitHub
+
+```bash
+python -m pip install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+```
+
+The GitHub Release also provides a wheel, source archive and `SHA256SUMS`; no PyPI account or package token is required.
+
 ## Highlights
 
 - Scan a local directory or strict public GitHub repository URL without executing target code.

@@ -1,15 +1,18 @@
 # Changelog
 
-## Unreleased
-
-- Publish the Python distribution as `agentproof-scanner` while preserving the `agentproof` import and CLI.
-- Add a 32-case, 16-rule synthetic conformance benchmark with precision, recall, F1 and exact-case accuracy reports.
-- Add a Trusted Publishing workflow for secretless PyPI releases with attestations.
-- Group Dependabot updates monthly to keep the pull-request queue readable.
-
 All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and semantic versioning.
 
 ## [Unreleased]
+
+### Added
+
+- Add a 32-case, 16-rule synthetic conformance benchmark with precision, recall, F1 and exact-case accuracy reports.
+- Add verified wheel, source archive and `SHA256SUMS` assets to every GitHub Release.
+
+### Changed
+
+- Distribute installable packages through GitHub Releases and version tags without requiring a PyPI project.
+- Group Dependabot updates monthly to keep the pull-request queue readable.
 
 ## [0.1.0] - 2026-08-23
 
