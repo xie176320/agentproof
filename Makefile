@@ -1,4 +1,4 @@
-.PHONY: install test scan demo report build
+.PHONY: install test scan demo report benchmark build
 
 install:
 	python -m pip install -e .
@@ -14,6 +14,9 @@ demo:
 
 report:
 	PYTHONPATH=src python -m agentproof scan examples/vulnerable-agent --no-quality --format html --output reports/demo.html --fail-on none
+
+benchmark:
+	PYTHONPATH=src python scripts/run_benchmark.py --json-out benchmarks/results/v0.1.0.json --markdown-out benchmarks/results/v0.1.0.md
 
 build:
 	python -m build

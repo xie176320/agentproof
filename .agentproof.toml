@@ -1,6 +1,8 @@
 [tool.agentproof]
 exclude = [
   "examples/vulnerable-agent/**",
+  "benchmarks/cases.json",
+  "benchmarks/results/**",
   "tests/fixtures/vulnerable/**",
   "docs/sample-report.*",
   "reports/**",

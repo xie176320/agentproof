@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agentproof"
+name = "agentproof-scanner"
 version = "0.1.0"
 description = "Static security and engineering quality scanner for AI Agent, MCP, and Skills repositories"
 readme = "README.md"
@@ -33,6 +33,10 @@ dev = ["build>=1.2", "ruff>=0.8", "pytest>=8", "pytest-cov>=6"]
 Homepage = "https://github.com/xie176320/agentproof"
 Documentation = "https://github.com/xie176320/agentproof/tree/main/docs"
 Issues = "https://github.com/xie176320/agentproof/issues"
+Changelog = "https://github.com/xie176320/agentproof/blob/main/CHANGELOG.md"
+Demo = "https://agentproof.streamlit.app/"
+Security = "https://github.com/xie176320/agentproof/security/policy"
+Source = "https://github.com/xie176320/agentproof"
 
 [project.scripts]
 agentproof = "agentproof.cli:main"

@@ -8,6 +8,7 @@
   <a href="https://github.com/xie176320/agentproof/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-32d583.svg"></a>
   <a href="https://www.python.org/"><img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-53b1fd.svg"></a>
   <a href="https://github.com/xie176320/agentproof/releases"><img alt="Release" src="https://img.shields.io/github/v/release/xie176320/agentproof?include_prereleases"></a>
+  <a href="https://pypi.org/project/agentproof-scanner/"><img alt="PyPI" src="https://img.shields.io/pypi/v/agentproof-scanner.svg"></a>
 </p>
 
 AgentProof is a deterministic static scanner for repositories that contain **AI Agent instructions, MCP servers, or Agent Skills**. It finds risky permissions and supply-chain patterns, attaches line-level evidence, recommends a fix, and exports reports for people and CI systems.
@@ -27,9 +28,7 @@ AI-enabled repositories increasingly mix natural-language instructions with exec
 ## 60-second start
 
 ```bash
-git clone https://github.com/xie176320/agentproof.git
-cd agentproof
-python -m pip install -e .
+python -m pip install agentproof-scanner
 
 # Scan the current repository
 agentproof scan .
@@ -40,6 +39,8 @@ agentproof scan https://github.com/owner/repository
 # Produce a GitHub code-scanning report
 agentproof scan . --format sarif --output agentproof.sarif
 ```
+
+The PyPI distribution is named `agentproof-scanner`; the installed Python package and CLI remain `agentproof`.
 
 Example summary:
 
@@ -165,6 +166,16 @@ AgentProof is an early static-analysis tool, not a sandbox and not a guarantee o
 - MCP authorization safety ultimately depends on the client, server and deployment environment.
 - Review high-impact findings before acting on them.
 
+## Public benchmark
+
+The versioned benchmark contains labeled positive and close-negative cases for all 16 built-in rules. It is executed in CI and publishes machine-readable JSON plus a Markdown accuracy report.
+
+| Dataset | Cases | Rule coverage | Precision | Recall | F1 | Exact-case accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| Synthetic conformance v0.1.0 | 32 | 16/16 | 100.0% | 100.0% | 100.0% | 100.0% |
+
+See [`benchmarks/README.md`](benchmarks/README.md) and the [v0.1.0 accuracy report](benchmarks/results/v0.1.0.md). These figures measure deterministic behavior on a transparent synthetic corpus; they are not a claim of real-world detection accuracy.
+
 ## Roadmap
 
 - [x] Local and bounded public-GitHub scanning
@@ -174,7 +185,7 @@ AgentProof is an early static-analysis tool, not a sandbox and not a guarantee o
 - [ ] Rule suppression with reviewed inline rationale
 - [ ] MCP capability graph and least-privilege diff
 - [ ] Signed rule packs and rule-schema validation
-- [ ] Benchmark corpus with precision/recall tracking
+- [x] Versioned benchmark corpus with precision/recall tracking
 - [ ] GitHub App for pull-request annotations
 
 ## Contributing and security
