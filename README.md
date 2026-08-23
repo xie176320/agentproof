@@ -29,7 +29,7 @@ AI-enabled repositories increasingly mix natural-language instructions with exec
 
 ```bash
 # Install the tagged release directly from GitHub
-python -m pip install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+python -m pip install "git+https://github.com/xie176320/agentproof.git@v0.1.1"
 
 # Scan the current repository
 agentproof scan .
@@ -44,19 +44,19 @@ agentproof scan . --format sarif --output agentproof.sarif
 For an isolated command-line installation, use `pipx`:
 
 ```bash
-pipx install "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+pipx install "git+https://github.com/xie176320/agentproof.git@v0.1.1"
 ```
 
 [GitHub Releases](https://github.com/xie176320/agentproof/releases) produced by the current workflow include a wheel, source archive and `SHA256SUMS`. To install the wheel without Git, download `agentproof_scanner-*.whl` from the selected release and run:
 
 ```bash
-python -m pip install ./agentproof_scanner-0.1.0-py3-none-any.whl
+python -m pip install ./agentproof_scanner-0.1.1-py3-none-any.whl
 ```
 
 To replace an older installation with a selected GitHub tag:
 
 ```bash
-python -m pip install --upgrade --force-reinstall "git+https://github.com/xie176320/agentproof.git@v0.1.0"
+python -m pip install --upgrade --force-reinstall "git+https://github.com/xie176320/agentproof.git@v0.1.1"
 ```
 
 AgentProof is distributed through GitHub Releases; no PyPI project, publishing account or package token is required. The built distribution is named `agentproof-scanner`, while the installed Python package and CLI remain `agentproof`.
@@ -144,7 +144,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: xie176320/agentproof@v0.1.0
+      - uses: xie176320/agentproof@v0.1.1
         with:
           path: .
           fail-on: high
@@ -193,7 +193,7 @@ The versioned benchmark contains labeled positive and close-negative cases for a
 |---|---:|---:|---:|---:|---:|---:|
 | Synthetic conformance v0.1.0 | 32 | 16/16 | 100.0% | 100.0% | 100.0% | 100.0% |
 
-See [`benchmarks/README.md`](benchmarks/README.md) and the [v0.1.0 accuracy report](benchmarks/results/v0.1.0.md). These figures measure deterministic behavior on a transparent synthetic corpus; they are not a claim of real-world detection accuracy.
+See [`benchmarks/README.md`](benchmarks/README.md) and the [v0.1.1 accuracy report](benchmarks/results/v0.1.1.md). These figures measure deterministic behavior on a transparent synthetic corpus; they are not a claim of real-world detection accuracy.
 
 ## Roadmap
 
