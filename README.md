@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/xie176320/agentproof/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/xie176320/agentproof/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://agentproof.streamlit.app/"><img alt="Live demo" src="https://img.shields.io/badge/live_demo-open-32d583.svg"></a>
   <a href="https://github.com/xie176320/agentproof/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-32d583.svg"></a>
   <a href="https://www.python.org/"><img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-53b1fd.svg"></a>
   <a href="https://github.com/xie176320/agentproof/releases"><img alt="Release" src="https://img.shields.io/github/v/release/xie176320/agentproof?include_prereleases"></a>
@@ -150,7 +151,9 @@ The project separates retrieval, traversal, rules, findings and reporting. Addin
 
 ## Public demo
 
-The Streamlit application is in [`web/app.py`](web/app.py). It exposes URL-only scanning and four report downloads. Deployment instructions are in [docs/demo.md](docs/demo.md). The live URL will be added after the first repository deployment is verified.
+**[Open the public AgentProof demo](https://agentproof.streamlit.app/).** Paste a public GitHub repository URL to scan it without uploading files or executing repository code.
+
+The Streamlit application is in [`web/app.py`](web/app.py). It exposes URL-only scanning and four report downloads. Deployment and verification details are in [docs/demo.md](docs/demo.md).
 
 ## Scope and limitations
 

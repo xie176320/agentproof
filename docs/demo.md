@@ -2,6 +2,8 @@
 
 The demo in `web/app.py` is designed for Streamlit Community Cloud or the included container.
 
+Live deployment: <https://agentproof.streamlit.app/>
+
 ## Streamlit Community Cloud
 
 1. Fork or publish the repository on GitHub.

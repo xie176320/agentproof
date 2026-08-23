@@ -8,6 +8,7 @@ AgentProof v0.1.0 provides a reproducible static security baseline for repositor
 - Detect 16 security and engineering-readiness patterns with file, line, evidence and remediation.
 - Export terminal, JSON, Markdown, standalone HTML and SARIF reports.
 - Run as a zero-runtime-dependency CLI, composite GitHub Action or URL-only Streamlit application.
+- Try the public URL-only demo at <https://agentproof.streamlit.app/>.
 - Keep remote analysis bounded to 25 MB archives, 100 MB uncompressed content, 5,000 files and 1 MB text files.
 - Reject traversal paths, duplicate archive paths, symbolic links and non-GitHub redirect hosts.
 - Ignore target-owned `.agentproof.toml` during remote scans so untrusted repositories cannot disable checks.
@@ -19,6 +20,7 @@ AgentProof v0.1.0 provides a reproducible static security baseline for repositor
 - AgentProof scans its own release source at 100/100 with no built-in findings.
 - A built wheel installs and runs in a clean virtual environment.
 - The Streamlit health endpoint and no-interaction application render were verified locally.
+- The public Streamlit deployment returns HTTP 200 at the release URL.
 
 ## Important limitation
 
